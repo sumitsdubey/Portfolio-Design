@@ -1,0 +1,210 @@
+:root{
+    --primary-color : #8490ff;
+    --secondary-color : #62bdfc;
+    --color-background: #0000000e;
+    --color-gradient : -webkit-linear-gradient(0deg, #8490ff, #62bdfc);
+}
+
+*{
+    font-family: "Ubuntu", sans-serif;
+}
+.hero{
+    background: var(--color-background);
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+p{
+    font-weight: 350;
+    font-size: 1rem;
+}
+p span{
+    font-weight: 400;
+}
+.hero-left h1, .hero-left p, .hero-left a{
+    margin-bottom: 2.5rem;
+}
+.hero-left{
+    padding-bottom: 2rem;
+}
+.hero-left a{
+    text-decoration: none;
+    background: var(--color-gradient);
+    padding: 0.8rem 1.5rem;
+    border-radius: 50rem;
+    color: white;
+}
+.hero-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-right img{
+    width: 70%;
+}
+
+
+/* about************* */
+
+#about{
+    min-height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-right h1, .about-right p, .about-right a{
+    margin-bottom: 2.5rem;
+}
+.about-right{
+    padding-top: 2rem;
+}
+.about-right a{
+    text-decoration: none;
+    background: var(--color-gradient);
+    padding: 0.8rem 1.5rem;
+    border-radius: 50rem;
+    color: white;
+}
+.about-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.about-left img{
+    width: 75%;
+}
+
+
+/* Services ************* */
+
+
+#services{
+    background: var(--color-background);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#services .top{
+    text-align: center;
+}
+.services-card{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.services-card .s-card{
+    text-align: center;
+    width: 22rem;
+    margin-top: 2rem;
+    border-radius: 15px;
+    transition: 0.5s ease;
+    padding: 15px 10px;
+    box-shadow: 1px 1px 5px 5px white;
+
+}
+.services-card .s-card img{
+    width: 30%;
+    margin-bottom: 1rem;
+}
+
+.services-card .s-card:hover{
+    transform: scale(1.01);
+    box-shadow: 1px 1px 15px 15px white;
+    cursor: pointer;
+}
+
+
+
+
+/* Contact*********** */
+
+
+#contact{
+    padding-bottom: 2rem;
+}
+#contact .contact-top{
+    background: var(--color-gradient);
+    height: 20rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#contact .contact-top h1{
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+
+.map{
+    margin-top: 2rem;
+    width: 100%;
+    height: 30rem;
+}
+
+.feedback{
+    margin-top: 1rem;;
+}
+.contact-dtl{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: start;
+}
+.contact-card img{
+    margin-right: 0.5rem;
+}
+.feedback .contact-card{
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 0.5;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.feedback input{
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline-color: var(--secondary-color);
+}
+textarea{
+    display: block;
+    outline-color: var(--secondary-color);
+    width: 100%;
+}
+.feedback #submit-btn{
+    background: var(--color-gradient);
+    outline: none;
+    border: none;
+    padding: 0.8rem 2rem;
+    margin-top: 1rem;
+}
+.feedback h1{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px){
+    .hero-left, .about-right{
+        text-align: center;
+    }
+    .contact-dtl{
+        justify-content: start;
+    }
+}
